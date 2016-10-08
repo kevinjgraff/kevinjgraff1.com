@@ -1,0 +1,32 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+	<footer>
+		<div class="container-fluid" style='position: absolute; bottom: 5px;'>
+			<p>  <a href="https://github.com/kgraff98" class="btn btn-social-icon btn-lg btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-github"></i></a> <a href="https://www.linkedin.com/in/kevin-graff-2a11ba121" class="btn btn-social-icon btn-lg btn-linkedin" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-linkedin"></i></a></p>
+		</div>
+	</footer>	
+
+<h1>Contact Me</h1>
+
+<div class="Black">
+<form method='POST' action=''>{% csrf_token %}
+{{ form.as_p }}
+
+<input type='submit' value='Submit' />
+
+</form>
+
+<div>
+
+<div id="container">
+<div id="box1" class="box blurred-bg tinted">
+ 	<div class="content">
+		<h1>Kevin Joseph Graff</h1>
+			<img class="img-circle1" src="/static/personal/img/profile2.jpg">
+		<h3> B.S. Computer Engineering </h3>		
+	</div>
+</div>
+
+{% endblock %}

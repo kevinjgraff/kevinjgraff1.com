@@ -1,0 +1,59 @@
+body{
+	background-image: url(/static/personal/img/chicago.jpg);
+}
+.img-circle1 {
+	display:block;
+	margin: 0 auto;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    border-radius: 120%;
+    float: center;
+}
+
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    background-color: lightgrey;
+}
+
+h4 {
+	color: white;
+	font-weight: bolder;
+}
+
+h3 {
+	color: white;
+	font-size: 40px;
+}
+
+h6 {
+	color: black;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.test{
+	left: 50%;
+}
+
+.glyphicon.glyphicon-home {
+    font-size: 41px;
+    top: 0.43em;
+}
+
+input, select, textarea{
+    color: black;
+}
+
+.link{
+    color: black;
+}
+
+.paragraph{
+    color: black;
+    font-size: 5px;
+    font-weight: bolder;
+}

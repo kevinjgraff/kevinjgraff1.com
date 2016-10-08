@@ -1,0 +1,16 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+	<footer>
+		<div class="container-fluid" style='position: absolute; bottom: 5px;'>
+			<p>  <a href="https://github.com/kgraff98" class="btn btn-social-icon btn-lg btn-github" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-github"></i></a> <a href="https://www.linkedin.com/in/kevin-graff-2a11ba121" class="btn btn-social-icon btn-lg btn-linkedin" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><i class="fa fa-linkedin"></i></a></p>
+		</div>
+	</footer>	
+<div style="background-color:orange !important" class="jumbotron">
+	<div class="container">
+	<h3>{{post.title}}</h3>
+	<h6>on {{post.date}}<h6>
+	{{ post.body|safe|linebreaks}}
+	</div>
+</div>
+{% endblock %}
